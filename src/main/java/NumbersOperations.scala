@@ -50,6 +50,7 @@ object NumbersOperations {
     val distinctArrayRDD = arrayOfNumbersRDD.map(_.distinct)
     distinctArrayRDD.map(_.mkString(" ")).foreach(println)
 
+    
   }
 
 }
