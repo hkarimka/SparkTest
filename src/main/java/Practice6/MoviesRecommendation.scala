@@ -86,7 +86,7 @@ object MoviesRecommendation {
 
     //Evaluate Model Calculate RMSE
     val predictions = model.transform(test)
-
+    predictions.na.drop
     val evaluator = new RegressionEvaluator()
       .setMetricName("rmse")
       .setLabelCol("rating")
